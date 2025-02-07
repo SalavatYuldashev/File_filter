@@ -1,0 +1,10 @@
+Lorem ipsum dolor sit amet
+45
+-5
+Пример
+3.1415
+consectetur adipiscing
+-0.001
+тестовое задание
+100500
+-999 ка
