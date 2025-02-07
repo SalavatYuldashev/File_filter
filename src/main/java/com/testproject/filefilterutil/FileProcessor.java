@@ -61,7 +61,7 @@ class FileProcessor {
         }
     }
 
-    public void printStatistics(boolean fullStats, boolean shortStats) {
+    public void printStatistics(boolean fullStats) {
         System.out.println("Статистика:");
         System.out.println("Целые числа: " + integers.size());
         System.out.println("Вещественные числа: " + floats.size());

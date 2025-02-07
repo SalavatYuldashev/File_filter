@@ -7,7 +7,7 @@ public class FileFilter {
 
         fileProcessor.processFiles(argumentParser.getFileNames());
         fileProcessor.writeOutputFiles(argumentParser.getOutputPath(), argumentParser.getPrefix(), argumentParser.isAppendMode());
-        fileProcessor.printStatistics(argumentParser.isFullStats(), argumentParser.isShortStats());
+        fileProcessor.printStatistics(argumentParser.isFullStats());
     }
 }
 

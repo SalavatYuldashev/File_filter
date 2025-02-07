@@ -9,7 +9,6 @@ class ArgumentParser {
     private String outputPath = "";
     private String prefix = "";
     private boolean fullStats = false;
-    private boolean shortStats = false;
     private final List<String> fileNames = new ArrayList<>();
 
     public ArgumentParser(String[] args) {
@@ -25,7 +24,6 @@ class ArgumentParser {
             CommandLine cmd = parser.parse(options, args);
             appendMode = cmd.hasOption("a");
             fullStats = cmd.hasOption("f");
-            shortStats = cmd.hasOption("s");
             if (cmd.hasOption("o")) outputPath = cmd.getOptionValue("o");
             if (cmd.hasOption("p")) prefix = cmd.getOptionValue("p");
             fileNames.addAll(cmd.getArgList());
@@ -49,10 +47,6 @@ class ArgumentParser {
 
     public boolean isFullStats() {
         return fullStats;
-    }
-
-    public boolean isShortStats() {
-        return shortStats;
     }
 
     public List<String> getFileNames() {
